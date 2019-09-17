@@ -20,7 +20,7 @@
 
 ## Python中的自定义对象
 
-- 内置的 hash() 方法可以用于所有的内置类型对象。如果是自定义对象调用 hash()的话，实际上运行的是自定义的 __hash__。
+- 内置的 hash() 方法可以用于所有的内置类型对象。如果是自定义对象调用 hash()的话，实际上运行的是自定义的 `__hash__`。
 
 ```python
 In [25]: class New:
@@ -34,5 +34,10 @@ In [26]: n = New()
 In [27]: hash(n)
 Out[27]: 1111
 ```
+
+## 检测对象是否可散列
+
+- `isinstance(my_obj, Hashable)`。
+- Hashable 在 模块 collections 中。
 
 
