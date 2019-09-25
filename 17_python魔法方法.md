@@ -1,4 +1,4 @@
-# Python魔法方法之`__getattr__`、`__setattr__`、`__getattribute__`、`__delattr__`
+# Python魔法方法
 
 ## `__getattr__(self, item)`
 
@@ -15,3 +15,15 @@
 ## `__delattr__(self, item)`
 
 - 如果要删除 name，这个方法就被调用。
+
+## `__call__`
+
+- 让类的实例，可以像函数一样被调用(obj())
+
+## `__mro__`
+
+- 获取类的继承关系，返回一个元祖
+
+## `__iter__`
+
+- 如果实现了`__iter__`方法，那么就认为对象是可迭代的。
